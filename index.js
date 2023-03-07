@@ -6,8 +6,12 @@ function initMap(){
     }
 
     const posicion2 = {
-        lat: 23,
-        lng: 232.323
+        lat: 46,
+        lng: -74.053
+    }
+    const posicion3 = {
+        lat: 61,
+        lng: -149.930
     }
     const map = new google.maps.Map(document.getElementById("map"),{
         zoom:4,
@@ -22,7 +26,13 @@ function initMap(){
      const marker2 =  new google.maps.Marker({
         position:posicion2,
         map: map,
-        title: "Posicion Inicial"
+        title: "Posicion Secundaria"
+    })
+
+    const marker3 =  new google.maps.Marker({
+        position:posicion3,
+        map: map,
+        title: "Posicion Final"
     })
 
    // geoposicion()
